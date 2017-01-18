@@ -1,0 +1,31 @@
+{
+    "name": "friend-finder",
+    "version": "1.0.0",
+    "description": "This Node-based app that uses Express for its front-end. It matches friends based on a compatibility survey.",
+    "main": "server.js",
+    "dependencies": {
+        "body-parser": "1.15.2",
+        "express": "4.14.0",
+        "path": "0.12.7"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "test": "node server.js",
+        "start": "node server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/aishaprograms/Friend-Finder.git"
+    },
+    "keywords": [
+        "node",
+        "express",
+        "body-parser"
+    ],
+    "author": "Aisha Ahmad",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/aishaprograms/Friend-Finder/issues"
+    },
+    "homepage": "https://github.com/aishaprograms/Friend-Finder#readme"
+}
