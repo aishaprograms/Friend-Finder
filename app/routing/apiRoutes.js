@@ -22,12 +22,17 @@ module.exports = function(app) {
         var userScores = user.scores;
         //userScores.length * 4 is the max possible difference
         var maxDifference = userScores.length * 4;
+        //iterate through friend data to find the friend with the least differences
         friendsData.forEach(function(element) {
-            var tempDifference = 0;
+            var elementDifference = 0;
+            //calculate the difference between the user's score and the current element's scores
             for (var i = 0; i < userScores.length; i++) {
-                tempDifference += Math.abs(userScores[i] - element.scores[i]);
+                elementDifference += Math.abs(userScores[i] - element.scores[i]);
             }
-            if (tempDifference < maxDifference) {
+            if (elementDifference < maxDifference) {
+                //reset max diff to the difference of the current element
+                maxDifference = elementDifference;
+                //set friend equal to the proper element in the array
                 friend = element;
             }
         });
