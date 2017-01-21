@@ -8,7 +8,7 @@
 
 var friendsArray = [{
     "name": "Dog",
-    "photo": "dog.jpg",
+    "photo": "https://cdn.pixabay.com/photo/2013/11/23/02/17/dog-216282_1280.jpg",
     "scores": [
         5,
         5,
@@ -23,7 +23,7 @@ var friendsArray = [{
     ]
 }, {
     "name": "Kitty Cat",
-    "photo": "cat.jpg",
+    "photo": "https://cdn.pixabay.com/photo/2013/11/08/21/12/cat-207583_1280.jpg",
     "scores": [
         1,
         1,
