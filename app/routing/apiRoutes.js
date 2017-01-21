@@ -29,7 +29,10 @@ module.exports = function(app) {
             for (var i = 0; i < userScores.length; i++) {
                 elementDifference += Math.abs(userScores[i] - element.scores[i]);
             }
-            if (elementDifference < maxDifference) {
+            //find the difference that is less than or equal to maxDifference
+            //this will also insure that a person is befriending someone who was most recently added
+            //takes care of ties
+            if (elementDifference <= maxDifference) {
                 //reset max diff to the difference of the current element
                 maxDifference = elementDifference;
                 //set friend equal to the proper element in the array
