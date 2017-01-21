@@ -2,6 +2,14 @@ body {
     background-color: #1995dc;
 }
 
+footer > a {
+    color: white;
+}
+
+footer > span {
+    color: white;
+}
+
 .home-wrapper {
     margin: auto;
     left: 50%;

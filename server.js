@@ -22,8 +22,8 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 app.use(express.static(path.join(__dirname + '/app/public')));
 
 //Points server to dynamic HTML files
+require("./app/routing/apiRoutes.js")(app);
 require("./app/routing/htmlRoutes.js")(app);
-// require("./app/routing/apiRoutes.js")(app);
 
 // SERVER LISTENER
 app.listen(PORT, function() {
