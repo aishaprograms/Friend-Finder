@@ -4,7 +4,7 @@ $('#submit-btn').on('click', function(event) {
     var scoreValues = [];
     $('.selected-option option:selected').each(function() {
         //+ converts the string to number
-        scoreValues.push(+$(this).val());
+        scoreValues.push(parseInt($(this).val()));
     });
     var friendData = {
         name: $("#name").val(),
